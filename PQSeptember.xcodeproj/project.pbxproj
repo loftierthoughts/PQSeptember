@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112632D6145DF4610066A8AB /* SongInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 112632D4145DF4600066A8AB /* SongInfoView.m */; };
+		112632D7145DF4610066A8AB /* SongInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112632D5145DF4600066A8AB /* SongInfoView.xib */; };
+		1189BB4214268CFB00649D4A /* PQBackgroundWithPQLogoTimesNewRoman.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3414268CFB00649D4A /* PQBackgroundWithPQLogoTimesNewRoman.PNG */; };
+		1189BB4314268CFB00649D4A /* PQInitialsIconTimesNewRoman.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3514268CFB00649D4A /* PQInitialsIconTimesNewRoman.PNG */; };
+		1189BB4414268CFB00649D4A /* PQBadCowsIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3614268CFB00649D4A /* PQBadCowsIcon_Small.png */; };
+		1189BB4514268CFB00649D4A /* PQBadCowsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3714268CFB00649D4A /* PQBadCowsIcon.png */; };
+		1189BB4614268CFB00649D4A /* PQInitialsIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3814268CFB00649D4A /* PQInitialsIcon_Small.png */; };
+		1189BB4714268CFB00649D4A /* PQInitialsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3914268CFB00649D4A /* PQInitialsIcon.png */; };
+		1189BB4814268CFB00649D4A /* PQBackgroundWithBadCows.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3A14268CFB00649D4A /* PQBackgroundWithBadCows.png */; };
+		1189BB4914268CFB00649D4A /* PQBackgroundWithPQLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3B14268CFB00649D4A /* PQBackgroundWithPQLogo.png */; };
+		1189BB4A14268CFB00649D4A /* PQInitials.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3C14268CFB00649D4A /* PQInitials.png */; };
+		1189BB4B14268CFB00649D4A /* PQInitials32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3D14268CFB00649D4A /* PQInitials32.png */; };
+		1189BB4C14268CFB00649D4A /* PQInitials48.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3E14268CFB00649D4A /* PQInitials48.png */; };
+		1189BB4D14268CFB00649D4A /* PQTextLogo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB3F14268CFB00649D4A /* PQTextLogo.PNG */; };
+		1189BB4E14268CFB00649D4A /* UIButtonBarBlackOpaqueBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB4014268CFB00649D4A /* UIButtonBarBlackOpaqueBackground.png */; };
+		1189BB4F14268CFB00649D4A /* UIPopupAlertSheetBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189BB4114268CFB00649D4A /* UIPopupAlertSheetBackground.png */; };
+		11AA52D1142666A800B2E386 /* Lobby_LobbyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AA52CF142666A800B2E386 /* Lobby_LobbyView.m */; };
+		11AA52D2142666A800B2E386 /* Lobby_LobbyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AA52D0142666A800B2E386 /* Lobby_LobbyView.xib */; };
+		11AA52D7142666FE00B2E386 /* QuickQueueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AA52D4142666FE00B2E386 /* QuickQueueView.m */; };
+		11AA52D8142666FE00B2E386 /* QuickQueueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AA52D6142666FE00B2E386 /* QuickQueueView.xib */; };
+		11AA52E014267B1900B2E386 /* LobbyViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AA52DE14267B1500B2E386 /* LobbyViewDelegate.m */; };
 		11EFB9CE1426334600F3EC31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EFB9CD1426334600F3EC31 /* UIKit.framework */; };
 		11EFB9D01426334600F3EC31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EFB9CF1426334600F3EC31 /* Foundation.framework */; };
 		11EFB9D21426334600F3EC31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EFB9D11426334600F3EC31 /* CoreGraphics.framework */; };
@@ -14,10 +35,6 @@
 		11EFB9DA1426334600F3EC31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB9D91426334600F3EC31 /* main.m */; };
 		11EFB9DE1426334600F3EC31 /* PQSeptemberAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB9DD1426334600F3EC31 /* PQSeptemberAppDelegate.m */; };
 		11EFB9E11426334600F3EC31 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EFB9DF1426334600F3EC31 /* MainWindow.xib */; };
-		11EFB9E41426334600F3EC31 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB9E31426334600F3EC31 /* FirstViewController.m */; };
-		11EFB9E71426334600F3EC31 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB9E61426334600F3EC31 /* SecondViewController.m */; };
-		11EFB9EA1426334600F3EC31 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EFB9E81426334600F3EC31 /* FirstView.xib */; };
-		11EFB9ED1426334600F3EC31 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EFB9EB1426334600F3EC31 /* SecondView.xib */; };
 		11EFB9F51426334700F3EC31 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EFB9F41426334700F3EC31 /* SenTestingKit.framework */; };
 		11EFB9F61426334700F3EC31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EFB9CD1426334600F3EC31 /* UIKit.framework */; };
 		11EFB9F71426334700F3EC31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EFB9CF1426334600F3EC31 /* Foundation.framework */; };
@@ -25,6 +42,13 @@
 		11EFBA001426334700F3EC31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11EFB9FE1426334700F3EC31 /* InfoPlist.strings */; };
 		11EFBA021426334700F3EC31 /* PQSeptemberTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 11EFBA011426334700F3EC31 /* PQSeptemberTests.h */; };
 		11EFBA041426334700F3EC31 /* PQSeptemberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFBA031426334700F3EC31 /* PQSeptemberTests.m */; };
+		11EFBA121426370600F3EC31 /* HostLobbyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFBA101426370600F3EC31 /* HostLobbyView.m */; };
+		11EFBA131426370600F3EC31 /* HostLobbyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EFBA111426370600F3EC31 /* HostLobbyView.xib */; };
+		11EFBA171426392E00F3EC31 /* JoinLobbyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFBA151426392E00F3EC31 /* JoinLobbyView.m */; };
+		11EFBA181426392E00F3EC31 /* JoinLobbyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EFBA161426392E00F3EC31 /* JoinLobbyView.xib */; };
+		11EFBA7014263B4200F3EC31 /* Start_StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFBA6E14263B4200F3EC31 /* Start_StartView.m */; };
+		11EFBA7114263B4200F3EC31 /* Start_StartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EFBA6F14263B4200F3EC31 /* Start_StartView.xib */; };
+		11EFBA781426559A00F3EC31 /* PQGlobalNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFBA771426559A00F3EC31 /* PQGlobalNotifications.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,29 +62,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112632D3145DF45F0066A8AB /* SongInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongInfoView.h; sourceTree = "<group>"; };
+		112632D4145DF4600066A8AB /* SongInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongInfoView.m; sourceTree = "<group>"; };
+		112632D5145DF4600066A8AB /* SongInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongInfoView.xib; sourceTree = "<group>"; };
+		1189BB3414268CFB00649D4A /* PQBackgroundWithPQLogoTimesNewRoman.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQBackgroundWithPQLogoTimesNewRoman.PNG; sourceTree = "<group>"; };
+		1189BB3514268CFB00649D4A /* PQInitialsIconTimesNewRoman.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQInitialsIconTimesNewRoman.PNG; sourceTree = "<group>"; };
+		1189BB3614268CFB00649D4A /* PQBadCowsIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQBadCowsIcon_Small.png; sourceTree = "<group>"; };
+		1189BB3714268CFB00649D4A /* PQBadCowsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQBadCowsIcon.png; sourceTree = "<group>"; };
+		1189BB3814268CFB00649D4A /* PQInitialsIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQInitialsIcon_Small.png; sourceTree = "<group>"; };
+		1189BB3914268CFB00649D4A /* PQInitialsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQInitialsIcon.png; sourceTree = "<group>"; };
+		1189BB3A14268CFB00649D4A /* PQBackgroundWithBadCows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQBackgroundWithBadCows.png; sourceTree = "<group>"; };
+		1189BB3B14268CFB00649D4A /* PQBackgroundWithPQLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQBackgroundWithPQLogo.png; sourceTree = "<group>"; };
+		1189BB3C14268CFB00649D4A /* PQInitials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQInitials.png; sourceTree = "<group>"; };
+		1189BB3D14268CFB00649D4A /* PQInitials32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQInitials32.png; sourceTree = "<group>"; };
+		1189BB3E14268CFB00649D4A /* PQInitials48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQInitials48.png; sourceTree = "<group>"; };
+		1189BB3F14268CFB00649D4A /* PQTextLogo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PQTextLogo.PNG; sourceTree = "<group>"; };
+		1189BB4014268CFB00649D4A /* UIButtonBarBlackOpaqueBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarBlackOpaqueBackground.png; sourceTree = "<group>"; };
+		1189BB4114268CFB00649D4A /* UIPopupAlertSheetBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIPopupAlertSheetBackground.png; sourceTree = "<group>"; };
+		11AA52CE142666A800B2E386 /* Lobby_LobbyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lobby_LobbyView.h; sourceTree = "<group>"; };
+		11AA52CF142666A800B2E386 /* Lobby_LobbyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lobby_LobbyView.m; sourceTree = "<group>"; };
+		11AA52D0142666A800B2E386 /* Lobby_LobbyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lobby_LobbyView.xib; sourceTree = "<group>"; };
+		11AA52D4142666FE00B2E386 /* QuickQueueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickQueueView.m; sourceTree = "<group>"; };
+		11AA52D5142666FE00B2E386 /* QuickQueueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickQueueView.h; sourceTree = "<group>"; };
+		11AA52D6142666FE00B2E386 /* QuickQueueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickQueueView.xib; sourceTree = "<group>"; };
+		11AA52DD14267B1300B2E386 /* LobbyViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyViewDelegate.h; sourceTree = "<group>"; };
+		11AA52DE14267B1500B2E386 /* LobbyViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyViewDelegate.m; sourceTree = "<group>"; };
 		11EFB9C91426334600F3EC31 /* PQSeptember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PQSeptember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EFB9CD1426334600F3EC31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11EFB9CF1426334600F3EC31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11EFB9D11426334600F3EC31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		11EFB9D51426334600F3EC31 /* PQSeptember-Info.plist */ = {isa = PBXFileReference; path = "PQSeptember-Info.plist"; sourceTree = "<group>"; };
+		11EFB9D51426334600F3EC31 /* PQSeptember-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PQSeptember-Info.plist"; sourceTree = "<group>"; };
 		11EFB9D71426334600F3EC31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11EFB9D91426334600F3EC31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		11EFB9DB1426334600F3EC31 /* PQSeptember-Prefix.pch */ = {isa = PBXFileReference; path = "PQSeptember-Prefix.pch"; sourceTree = "<group>"; };
-		11EFB9DC1426334600F3EC31 /* PQSeptemberAppDelegate.h */ = {isa = PBXFileReference; path = PQSeptemberAppDelegate.h; sourceTree = "<group>"; };
+		11EFB9DB1426334600F3EC31 /* PQSeptember-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PQSeptember-Prefix.pch"; sourceTree = "<group>"; };
+		11EFB9DC1426334600F3EC31 /* PQSeptemberAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQSeptemberAppDelegate.h; sourceTree = "<group>"; };
 		11EFB9DD1426334600F3EC31 /* PQSeptemberAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQSeptemberAppDelegate.m; sourceTree = "<group>"; };
 		11EFB9E01426334600F3EC31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		11EFB9E21426334600F3EC31 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		11EFB9E31426334600F3EC31 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		11EFB9E51426334600F3EC31 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		11EFB9E61426334600F3EC31 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		11EFB9E91426334600F3EC31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
-		11EFB9EC1426334600F3EC31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		11EFB9F31426334700F3EC31 /* PQSeptemberTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PQSeptemberTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EFB9F41426334700F3EC31 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		11EFB9FD1426334700F3EC31 /* PQSeptemberTests-Info.plist */ = {isa = PBXFileReference; path = "PQSeptemberTests-Info.plist"; sourceTree = "<group>"; };
+		11EFB9FD1426334700F3EC31 /* PQSeptemberTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PQSeptemberTests-Info.plist"; sourceTree = "<group>"; };
 		11EFB9FF1426334700F3EC31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11EFBA011426334700F3EC31 /* PQSeptemberTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQSeptemberTests.h; sourceTree = "<group>"; };
 		11EFBA031426334700F3EC31 /* PQSeptemberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQSeptemberTests.m; sourceTree = "<group>"; };
+		11EFBA0F1426370600F3EC31 /* HostLobbyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HostLobbyView.h; path = ../HostLobbyView.h; sourceTree = "<group>"; };
+		11EFBA101426370600F3EC31 /* HostLobbyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HostLobbyView.m; path = ../HostLobbyView.m; sourceTree = "<group>"; };
+		11EFBA111426370600F3EC31 /* HostLobbyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HostLobbyView.xib; path = ../HostLobbyView.xib; sourceTree = "<group>"; };
+		11EFBA141426392E00F3EC31 /* JoinLobbyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinLobbyView.h; sourceTree = "<group>"; };
+		11EFBA151426392E00F3EC31 /* JoinLobbyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinLobbyView.m; sourceTree = "<group>"; };
+		11EFBA161426392E00F3EC31 /* JoinLobbyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinLobbyView.xib; sourceTree = "<group>"; };
+		11EFBA6D14263B4200F3EC31 /* Start_StartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Start_StartView.h; sourceTree = "<group>"; };
+		11EFBA6E14263B4200F3EC31 /* Start_StartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Start_StartView.m; sourceTree = "<group>"; };
+		11EFBA6F14263B4200F3EC31 /* Start_StartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Start_StartView.xib; sourceTree = "<group>"; };
+		11EFBA761426559A00F3EC31 /* PQGlobalNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQGlobalNotifications.h; path = ../PQGlobalNotifications.h; sourceTree = "<group>"; };
+		11EFBA771426559A00F3EC31 /* PQGlobalNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQGlobalNotifications.m; path = ../PQGlobalNotifications.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +142,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1189BB5014268CFD00649D4A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1189BB3414268CFB00649D4A /* PQBackgroundWithPQLogoTimesNewRoman.PNG */,
+				1189BB3514268CFB00649D4A /* PQInitialsIconTimesNewRoman.PNG */,
+				1189BB3614268CFB00649D4A /* PQBadCowsIcon_Small.png */,
+				1189BB3714268CFB00649D4A /* PQBadCowsIcon.png */,
+				1189BB3814268CFB00649D4A /* PQInitialsIcon_Small.png */,
+				1189BB3914268CFB00649D4A /* PQInitialsIcon.png */,
+				1189BB3A14268CFB00649D4A /* PQBackgroundWithBadCows.png */,
+				1189BB3B14268CFB00649D4A /* PQBackgroundWithPQLogo.png */,
+				1189BB3C14268CFB00649D4A /* PQInitials.png */,
+				1189BB3D14268CFB00649D4A /* PQInitials32.png */,
+				1189BB3E14268CFB00649D4A /* PQInitials48.png */,
+				1189BB3F14268CFB00649D4A /* PQTextLogo.PNG */,
+				1189BB4014268CFB00649D4A /* UIButtonBarBlackOpaqueBackground.png */,
+				1189BB4114268CFB00649D4A /* UIPopupAlertSheetBackground.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		11AA52E614267D1500B2E386 /* Start Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				11AA52EA14267D9E00B2E386 /* Classes */,
+				11AA52EC14267DA700B2E386 /* XIBs */,
+			);
+			name = "Start Tabs";
+			sourceTree = "<group>";
+		};
+		11AA52E914267D4100B2E386 /* Lobby Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				11AA52ED14267DDB00B2E386 /* Classes */,
+				11AA52EE14267DE300B2E386 /* XIBs */,
+			);
+			name = "Lobby Tabs";
+			sourceTree = "<group>";
+		};
+		11AA52EA14267D9E00B2E386 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				11EFBA6D14263B4200F3EC31 /* Start_StartView.h */,
+				11EFBA6E14263B4200F3EC31 /* Start_StartView.m */,
+				11EFBA0F1426370600F3EC31 /* HostLobbyView.h */,
+				11EFBA101426370600F3EC31 /* HostLobbyView.m */,
+				11AA52DD14267B1300B2E386 /* LobbyViewDelegate.h */,
+				11AA52DE14267B1500B2E386 /* LobbyViewDelegate.m */,
+				11EFBA141426392E00F3EC31 /* JoinLobbyView.h */,
+				11EFBA151426392E00F3EC31 /* JoinLobbyView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		11AA52EC14267DA700B2E386 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				11EFBA6F14263B4200F3EC31 /* Start_StartView.xib */,
+				11EFBA111426370600F3EC31 /* HostLobbyView.xib */,
+				11EFBA161426392E00F3EC31 /* JoinLobbyView.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		11AA52ED14267DDB00B2E386 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				11AA52CE142666A800B2E386 /* Lobby_LobbyView.h */,
+				11AA52CF142666A800B2E386 /* Lobby_LobbyView.m */,
+				11AA52D5142666FE00B2E386 /* QuickQueueView.h */,
+				11AA52D4142666FE00B2E386 /* QuickQueueView.m */,
+				112632D3145DF45F0066A8AB /* SongInfoView.h */,
+				112632D4145DF4600066A8AB /* SongInfoView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		11AA52EE14267DE300B2E386 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				11AA52D0142666A800B2E386 /* Lobby_LobbyView.xib */,
+				11AA52D6142666FE00B2E386 /* QuickQueueView.xib */,
+				112632D5145DF4600066A8AB /* SongInfoView.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		11AA52EF14267E0400B2E386 /* Global/Startup */ = {
+			isa = PBXGroup;
+			children = (
+				11AA52F014267E1900B2E386 /* Classes */,
+				11AA52F214267E2200B2E386 /* XIBs */,
+			);
+			name = Global/Startup;
+			sourceTree = "<group>";
+		};
+		11AA52F014267E1900B2E386 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				11EFBA761426559A00F3EC31 /* PQGlobalNotifications.h */,
+				11EFBA771426559A00F3EC31 /* PQGlobalNotifications.m */,
+				11EFB9DC1426334600F3EC31 /* PQSeptemberAppDelegate.h */,
+				11EFB9DD1426334600F3EC31 /* PQSeptemberAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		11AA52F214267E2200B2E386 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				11EFB9DF1426334600F3EC31 /* MainWindow.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		11AA52F314267E9200B2E386 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1189BB5014268CFD00649D4A /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		11EFB9BE1426334600F3EC31 = {
 			isa = PBXGroup;
 			children = (
@@ -121,15 +298,10 @@
 		11EFB9D31426334600F3EC31 /* PQSeptember */ = {
 			isa = PBXGroup;
 			children = (
-				11EFB9DC1426334600F3EC31 /* PQSeptemberAppDelegate.h */,
-				11EFB9DD1426334600F3EC31 /* PQSeptemberAppDelegate.m */,
-				11EFB9DF1426334600F3EC31 /* MainWindow.xib */,
-				11EFB9E21426334600F3EC31 /* FirstViewController.h */,
-				11EFB9E31426334600F3EC31 /* FirstViewController.m */,
-				11EFB9E51426334600F3EC31 /* SecondViewController.h */,
-				11EFB9E61426334600F3EC31 /* SecondViewController.m */,
-				11EFB9E81426334600F3EC31 /* FirstView.xib */,
-				11EFB9EB1426334600F3EC31 /* SecondView.xib */,
+				11AA52EF14267E0400B2E386 /* Global/Startup */,
+				11AA52E614267D1500B2E386 /* Start Tabs */,
+				11AA52E914267D4100B2E386 /* Lobby Tabs */,
+				11AA52F314267E9200B2E386 /* Resources */,
 				11EFB9D41426334600F3EC31 /* Supporting Files */,
 			);
 			path = PQSeptember;
@@ -234,8 +406,26 @@
 			files = (
 				11EFB9D81426334600F3EC31 /* InfoPlist.strings in Resources */,
 				11EFB9E11426334600F3EC31 /* MainWindow.xib in Resources */,
-				11EFB9EA1426334600F3EC31 /* FirstView.xib in Resources */,
-				11EFB9ED1426334600F3EC31 /* SecondView.xib in Resources */,
+				11EFBA131426370600F3EC31 /* HostLobbyView.xib in Resources */,
+				11EFBA181426392E00F3EC31 /* JoinLobbyView.xib in Resources */,
+				11EFBA7114263B4200F3EC31 /* Start_StartView.xib in Resources */,
+				11AA52D2142666A800B2E386 /* Lobby_LobbyView.xib in Resources */,
+				11AA52D8142666FE00B2E386 /* QuickQueueView.xib in Resources */,
+				1189BB4214268CFB00649D4A /* PQBackgroundWithPQLogoTimesNewRoman.PNG in Resources */,
+				1189BB4314268CFB00649D4A /* PQInitialsIconTimesNewRoman.PNG in Resources */,
+				1189BB4414268CFB00649D4A /* PQBadCowsIcon_Small.png in Resources */,
+				1189BB4514268CFB00649D4A /* PQBadCowsIcon.png in Resources */,
+				1189BB4614268CFB00649D4A /* PQInitialsIcon_Small.png in Resources */,
+				1189BB4714268CFB00649D4A /* PQInitialsIcon.png in Resources */,
+				1189BB4814268CFB00649D4A /* PQBackgroundWithBadCows.png in Resources */,
+				1189BB4914268CFB00649D4A /* PQBackgroundWithPQLogo.png in Resources */,
+				1189BB4A14268CFB00649D4A /* PQInitials.png in Resources */,
+				1189BB4B14268CFB00649D4A /* PQInitials32.png in Resources */,
+				1189BB4C14268CFB00649D4A /* PQInitials48.png in Resources */,
+				1189BB4D14268CFB00649D4A /* PQTextLogo.PNG in Resources */,
+				1189BB4E14268CFB00649D4A /* UIButtonBarBlackOpaqueBackground.png in Resources */,
+				1189BB4F14268CFB00649D4A /* UIPopupAlertSheetBackground.png in Resources */,
+				112632D7145DF4610066A8AB /* SongInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +463,14 @@
 			files = (
 				11EFB9DA1426334600F3EC31 /* main.m in Sources */,
 				11EFB9DE1426334600F3EC31 /* PQSeptemberAppDelegate.m in Sources */,
-				11EFB9E41426334600F3EC31 /* FirstViewController.m in Sources */,
-				11EFB9E71426334600F3EC31 /* SecondViewController.m in Sources */,
+				11EFBA121426370600F3EC31 /* HostLobbyView.m in Sources */,
+				11EFBA171426392E00F3EC31 /* JoinLobbyView.m in Sources */,
+				11EFBA7014263B4200F3EC31 /* Start_StartView.m in Sources */,
+				11EFBA781426559A00F3EC31 /* PQGlobalNotifications.m in Sources */,
+				11AA52D1142666A800B2E386 /* Lobby_LobbyView.m in Sources */,
+				11AA52D7142666FE00B2E386 /* QuickQueueView.m in Sources */,
+				11AA52E014267B1900B2E386 /* LobbyViewDelegate.m in Sources */,
+				112632D6145DF4610066A8AB /* SongInfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,22 +507,6 @@
 				11EFB9E01426334600F3EC31 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		11EFB9E81426334600F3EC31 /* FirstView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11EFB9E91426334600F3EC31 /* en */,
-			);
-			name = FirstView.xib;
-			sourceTree = "<group>";
-		};
-		11EFB9EB1426334600F3EC31 /* SecondView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11EFB9EC1426334600F3EC31 /* en */,
-			);
-			name = SecondView.xib;
 			sourceTree = "<group>";
 		};
 		11EFB9FE1426334700F3EC31 /* InfoPlist.strings */ = {
@@ -458,6 +638,7 @@
 				11EFBA091426334700F3EC31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11EFBA0A1426334700F3EC31 /* Build configuration list for PBXNativeTarget "PQSeptemberTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +647,7 @@
 				11EFBA0C1426334700F3EC31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
