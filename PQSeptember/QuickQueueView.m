@@ -120,31 +120,31 @@ static NSTimeInterval DEFAULT_SHOW_SPEED = 0.2;
 
 - (IBAction)lastPlayedInfoTouched:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:0],libraryIDString, nil]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:-1],libraryIDString, nil]];
     NSLog(@"Last Played Info Touched");
 }
 
 - (IBAction)nowPlayingInfoTouched:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:1],libraryIDString, nil]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:0],libraryIDString, nil]];
     NSLog(@"Now Playing Info Touched");
 }
 
 - (IBAction)upNext1InfoTouched:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:2],libraryIDString, nil]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:1],libraryIDString, nil]];
     NSLog(@"Up Next 1 Info Touched");
 }
 
 - (IBAction)upNext2InfoTouched:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:3],libraryIDString, nil]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:2],libraryIDString, nil]];
     NSLog(@"Up Next 1 Info Touched");
 }
 
 - (IBAction)upNext3InfoTouched:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:4],libraryIDString, nil]];  
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewRequested object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:3],libraryIDString, nil]];  
     NSLog(@"Up Next 1 Info Touched"); 
 }
 

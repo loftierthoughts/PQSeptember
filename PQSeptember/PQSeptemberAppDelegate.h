@@ -19,24 +19,6 @@
 @property (nonatomic, retain) IBOutlet HostLobbyView *hostLobbyView;
 @property (nonatomic, retain) IBOutlet JoinLobbyView *joinLobbyView;
 @property (nonatomic, retain) UIViewController *currentViewController;
-
-// register for notifications
-- (void)registerForSceneChangeRequestNotifications;
-- (void)registerForSongInfoViewRequestNotifications;
-- (void)registerForLobbyNotifications;
-
-// notification execution methods
-- (void)requestSceneChange:(NSNotification *)notification;
-- (void)startLobby:(NSNotification *)notification;
-- (void)quitLobby:(NSNotification *)notification;
-- (void)requestSongInfoView:(NSNotification *)notification;
-
-// view transition methods
-- (void)changeToViewControllerByName:(NSString *)viewControllerName;
-- (void)changeToViewControllerByName:(NSString *)viewControllerName withAnimation:(UIViewAnimationTransition)someAnimation;
-- (void)changeToViewController:(UIViewController *)viewController withTransition:(UIViewAnimationTransition)transition quickQueue:(BOOL)showQuickQueue;
-
-// song info view
-- (void)showLocalSongInfoViewFor:(NSUInteger)libraryID;
+@property (nonatomic, assign) BOOL infoViewCurrentlyShowing;
 
 @end

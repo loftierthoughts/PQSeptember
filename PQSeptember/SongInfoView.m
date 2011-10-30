@@ -8,44 +8,124 @@
 
 #import "SongInfoView.h"
 
+//constants for layout
+static NSTimeInterval DEFAULT_HIDDEN_ORIGIN = 480;
+static NSTimeInterval DEFAULT_SHOWN_ORIGIN = 235;
+static NSTimeInterval DEFAULT_SHOW_SPEED = 0.2;
+static NSTimeInterval DEFAULT_FADE_SPEED = 0.8;
+
 @implementation SongInfoView
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize songNameLabel, artistNameLabel, albumNameLabel, voteCountLabel, queuePositionLabel, albumCoverImageView, voteButton, spotifyButton, iTunesButton, currentLibraryID;
+
+- (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithFrame:frame];
     if (self) {
-        // Custom initialization
+        // initialization code- (void)registerForSongInfoViewRequestNotifications
+        {
+        }
     }
     return self;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)registerForSongInfoViewExchangeNotification
 {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(requestSongInfoViewExchange:)
+                                                 name:PQSongInfoViewExchangeRequested
+                                               object:nil];
+}
+
+- (void)showSongInfoFor:(NSInteger)libraryID
+{
+    currentLibraryID = libraryID;
+        songNameLabel.text = [NSString stringWithFormat:@"Song # %i",libraryID];
+}
+
+- (void)requestSongInfoViewExchange:(NSNotification *)notification
+{
+    NSLog(@"NOTIFICATION DETAILS: name - %@ | object - %@ | user info - %@",notification.name, notification.object, notification.userInfo);
+    if ([[notification.userInfo objectForKey:isLocalString] isEqualToString:isYES])
+    {
+        NSInteger libraryID = [(NSNumber *)[notification.userInfo objectForKey:libraryIDString] intValue];
+        [self exchangeSongInfoFor:libraryID];
+    }
     
-    // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
+- (void)exchangeSongInfoFor:(NSInteger)libraryID
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:DEFAULT_FADE_SPEED];
+    self.songNameLabel.alpha = 0;
+    self.artistNameLabel.alpha = 0;
+    self.albumNameLabel.alpha = 0;
+    self.voteCountLabel.alpha = 0;
+    self.queuePositionLabel.alpha = 0;
+    self.albumCoverImageView.alpha = 0;
+    self.voteButton.alpha = 0;
+    self.spotifyButton.alpha = 0;
+    self.iTunesButton.alpha = 0;
+    self.songNameLabel.alpha = 1;
+    self.artistNameLabel.alpha = 1;
+    self.albumNameLabel.alpha = 1;
+    self.voteCountLabel.alpha = 1;
+    self.queuePositionLabel.alpha = 1;
+    self.albumCoverImageView.alpha = 1;
+    self.voteButton.alpha = 1;
+    self.spotifyButton.alpha = 1;
+    self.iTunesButton.alpha = 1;
+    [UIView commitAnimations];
+    [self showSongInfoFor:libraryID];
 }
 
-- (void)viewDidUnload
+- (void)hideSongInfoView
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    CGRect frame = self.frame;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:DEFAULT_SHOW_SPEED];
+    frame.origin.y = DEFAULT_HIDDEN_ORIGIN;
+    self.frame = frame;
+    [UIView commitAnimations];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (void)showSongInfoView
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    CGRect frame = self.frame;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:DEFAULT_SHOW_SPEED];
+    frame.origin.y = DEFAULT_SHOWN_ORIGIN;
+    self.frame = frame;
+    [UIView commitAnimations];
+}
+
+- (IBAction)hideViewTouched:(id)sender
+{
+    [self hideSongInfoView];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewDismissed object:self userInfo:nil];
+    self = nil;
+}
+
+- (IBAction)voteButtonTouched:(id)sender
+{
+    NSLog(@"Song %i Voted For",self.currentLibraryID);
+}
+
+- (IBAction)spotifyButtonTouched:(id)sender
+{
+    NSLog(@"Song %i Sent To Spotify",self.currentLibraryID);
+}
+
+- (IBAction)iTunesButtonTouched:(id)sender
+{
+    NSLog(@"Song %i Sent To iTunes",self.currentLibraryID);   
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewDismissed object:self userInfo:nil];
+    self = nil;
 }
 
 @end

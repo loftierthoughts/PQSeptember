@@ -12,8 +12,27 @@
 
 @interface PQSeptemberAppDelegate (Private)
 
+// register for notifications
+- (void)registerForSceneChangeRequestNotifications;
+- (void)registerForSongInfoViewRequestNotifications;
+- (void)registerForLobbyNotifications;
+
+// notification execution methods
+- (void)requestSceneChange:(NSNotification *)notification;
+- (void)startLobby:(NSNotification *)notification;
+- (void)quitLobby:(NSNotification *)notification;
 - (void)requestLobbyTabs:(NSNotification *)notification;
 - (void)requestStartTabs:(NSNotification *)notification;
+- (void)requestSongInfoView:(NSNotification *)notification;
+- (void)songInfoViewDismissed:(NSNotification *)notification;
+
+// song info view
+- (void)showLocalSongInfoViewFor:(NSInteger)libraryID;
+
+// view transition methods
+- (void)changeToViewControllerByName:(NSString *)viewControllerName;
+- (void)changeToViewControllerByName:(NSString *)viewControllerName withAnimation:(UIViewAnimationTransition)someAnimation;
+- (void)changeToViewController:(UIViewController *)viewController withTransition:(UIViewAnimationTransition)transition quickQueue:(BOOL)showQuickQueue;
 
 @end
 
@@ -24,6 +43,7 @@
 @synthesize lobbyTabs = _lobbyTabs;
 @synthesize hostLobbyView = _hostLobbyView;
 @synthesize joinLobbyView = _joinLobbyView;
+@synthesize infoViewCurrentlyShowing;
 @synthesize currentViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -36,6 +56,7 @@
     [self registerForSceneChangeRequestNotifications];
     [self registerForSongInfoViewRequestNotifications];
     [self registerForLobbyNotifications];
+    infoViewCurrentlyShowing = NO;
     return YES;
 }
 
@@ -118,6 +139,10 @@
                                              selector:@selector(requestSongInfoView:)
                                                  name:PQSongInfoViewRequested
                                                object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(songInfoViewDismissed:)
+                                                 name:PQSongInfoViewDismissed
+                                               object:nil];
 }
 
 - (void)registerForLobbyNotifications
@@ -169,9 +194,15 @@
     NSLog(@"NOTIFICATION DETAILS: name - %@ | object - %@ | user info - %@",notification.name, notification.object, notification.userInfo);
     if ([[notification.userInfo objectForKey:isLocalString] isEqualToString:isYES])
     {
-        NSUInteger libraryID = [(NSNumber *)[notification.userInfo objectForKey:libraryIDString] intValue];
+        NSInteger libraryID = [(NSNumber *)[notification.userInfo objectForKey:libraryIDString] intValue];
         [self showLocalSongInfoViewFor:libraryID];
     }
+}
+
+- (void)songInfoViewDismissed:(NSNotification *)notification
+{
+    NSLog(@"NOTIFICATION DETAILS: name - %@ | object - %@ | user info - %@",notification.name, notification.object, notification.userInfo);
+    infoViewCurrentlyShowing = NO;
 }
 
 // VIEW TRANSITION METHODS
@@ -261,22 +292,36 @@
     }
 }
 
-- (void)showLocalSongInfoViewFor:(NSUInteger)libraryID
+- (void)showLocalSongInfoViewFor:(NSInteger)libraryID
 {
     NSLog(@"Song Info Requested For: %u",libraryID);
-    /*
+    if (self.infoViewCurrentlyShowing)
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:PQSongInfoViewExchangeRequested 
+                                                            object:self 
+                                                          userInfo:[NSDictionary dictionaryWithObjectsAndKeys:isYES,isLocalString,[NSNumber numberWithInt:libraryID],libraryIDString, nil]];
+    }
+    else
+    {
     SongInfoView *songInfoView;
     NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SongInfoView" owner:nil options:nil];
     for (id currentObject in topLevelObjects)
     {
         if ([currentObject isKindOfClass:[SongInfoView class]])
         {
-            songInfoView = (QuickQueueView *)currentObject;
+            songInfoView = (SongInfoView *)currentObject;
             break;
         }
     }
+    CGRect frame = songInfoView.frame;
+    frame.origin.y = 480;
+    songInfoView.frame = frame;
+        self.infoViewCurrentlyShowing = YES;
+        [songInfoView registerForSongInfoViewExchangeNotification];
     [self.window addSubview:songInfoView];
-     */
+    [songInfoView showSongInfoFor:libraryID];
+    [songInfoView showSongInfoView];
+    }
 }
 
 @end

@@ -10,6 +10,8 @@
 
 NSString * const PQSceneChangeRequestedNotification = @"PQ Scene Change Requested";
 NSString * const PQSongInfoViewRequested = @"PQ Song Info View Requested";
+NSString * const PQSongInfoViewExchangeRequested = @"PQ Song Info View Exchange Requested";
+NSString * const PQSongInfoViewDismissed = @"PQ Song Info View Dismissed";
 NSString * const PQLobbyStartRequestedNotification = @"PQ Lobby Start Requested";
 NSString * const PQLobbyQuitRequestedNotification = @"PQ Lobby Quit Requested";
 NSString * const startTabsString = @"startTabs";

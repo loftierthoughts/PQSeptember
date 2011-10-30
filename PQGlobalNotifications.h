@@ -12,6 +12,8 @@
 
 extern NSString * const PQSceneChangeRequestedNotification;
 extern NSString * const PQSongInfoViewRequested;
+extern NSString * const PQSongInfoViewExchangeRequested;
+extern NSString * const PQSongInfoViewDismissed;
 extern NSString * const PQLobbyStartRequestedNotification;
 extern NSString * const PQLobbyQuitRequestedNotification;
 extern NSString * const startTabsString;
