@@ -1,4 +1,4 @@
-PQSeptember
+PartyQueue
 ===========
 
-PartyQueue September 2012 Release
+PartyQueue iOS Client
